@@ -1,15 +1,11 @@
 {
-    "version":  "0.2.0",
+    "version":  "0.2.1",
     "published":  "2026-11-26",
     "notes":  [
-                  "Six new voices: Robot, Demon, Cavern, Radio, Alien and Whisper",
-                  "Optional update prompt, so new versions can be installed from inside Yappest",
-                  "Run initial setup button in Settings",
-                  "Single keys can now be used as shortcuts",
-                  "Game icons on clips, clip play button and highlight, and a missing-sound repair prompt",
-                  "Mute and unmute beep removed"
+                  "Credits VB-CABLE (VB-Audio Software) in Settings",
+                  "Small layout tidy-ups"
               ],
-    "url":  "https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/download/v0.2.0/Yappest-Setup.exe",
-    "sha256":  "CEF2F3F41867A57C6D0D3AB95610578E91078E38903EC959DF4DB04FFABA6D1C",
-    "size":  187276980
+    "url":  "https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/download/v0.2.1/Yappest-Setup.exe",
+    "sha256":  "E0DF59F5113DF381AE577A0E64970632B01BD967B6CDE24872D72E25257DEE77",
+    "size":  187316140
 }
