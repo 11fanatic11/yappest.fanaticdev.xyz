@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yappest</title>
+  <meta name="description" content="Yappest is a free voice changer, soundboard and audio clipper for Windows 10 and 11.">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root { --bg:#0c0c0e; --panel:#19191d; --line:#2a2a30; --text:#f1f1f3; --dim:#9c9ca6; --accent:#fcc603; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.55 "Segoe UI Variable Text","Segoe UI",system-ui,sans-serif; }
+    main { max-width: 860px; margin: 0 auto; padding: 72px 24px 56px; }
+    .logo { width:84px; height:84px; border-radius:20px; display:block; }
+    h1 { font-size: clamp(34px, 6vw, 52px); line-height:1.08; margin: 28px 0 14px; letter-spacing:-0.02em; }
+    h1 span { color: var(--accent); }
+    p.lead { color: var(--dim); font-size: 19px; max-width: 620px; margin: 0 0 30px; }
+    .cta { display:inline-flex; align-items:center; gap:10px; background:var(--accent); color:#000; font-weight:600; text-decoration:none; padding:14px 22px; border-radius:10px; }
+    .cta:hover { filter: brightness(1.08); }
+    .meta { color: var(--dim); font-size: 13px; margin-top: 12px; }
+    h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color:#62626c; margin: 56px 0 14px; font-weight:600; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 18px 16px; }
+    .card b { display:block; margin-bottom:4px; }
+    .card span { color: var(--dim); font-size: 14px; }
+    ul { color: var(--dim); padding-left: 20px; } li { margin: 6px 0; }
+    footer { color:#62626c; font-size:13px; margin-top: 64px; border-top:1px solid var(--line); padding-top:20px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <img class="logo" src="yappest.png" alt="Yappest logo">
+  <h1>Change your voice.<br><span>Clip the moment.</span></h1>
+  <p class="lead">Yappest is a free voice changer, soundboard and audio clipper for Windows 10 and 11. One virtual microphone, called Yappest Input, carries your voice, your effects and your sounds.</p>
+
+  <a class="cta" id="download" href="https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/latest/download/Yappest-Setup.exe">Download for Windows</a>
+  <div class="meta" id="meta">Windows 10 or 11 · free · installs for your user account, no admin needed to install</div>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><b>Voice changer</b><span>Eight voices: Pitch, Sound Barrier, Robot, Demon, Cavern, Radio, Alien and Whisper, each with its own controls.</span></div>
+    <div class="card"><b>Soundboard</b><span>Add mp3, wav, ogg or mp4 (audio is pulled from the video). Name sounds, give them icons, play from the app or a Stream Deck.</span></div>
+    <div class="card"><b>Clipping</b><span>Save the last 5 to 60 seconds of your mic and your PC's audio with a key. Clips are mp3, transcribed on your PC so you can trim by clicking words.</span></div>
+    <div class="card"><b>Stream Deck</b><span>Play sounds, clip, mute, and switch voices from your keys.</span></div>
+  </div>
+
+  <h2>Good to know</h2>
+  <ul>
+    <li>The virtual microphone uses the VB-Cable audio driver. Yappest sets it up for you the first time it runs (Windows asks for permission once).</li>
+    <li>Speech recognition for clips runs entirely on your PC. Nothing is uploaded.</li>
+    <li>Updates are optional. Yappest tells you when a new version is out and only installs if you say yes.</li>
+  </ul>
+
+  <footer>© 2026 Fanatic</footer>
+</main>
+<script>
+  // show the current version next to the download button
+  fetch('update.json', { cache: 'no-store' }).then(r => r.json()).then(j => {
+    if (j && j.version) document.getElementById('meta').textContent = 'Version ' + j.version + ' · Windows 10 or 11 · free · installs for your user account, no admin needed to install';
+  }).catch(() => {});
+</script>
+</body>
+</html>
