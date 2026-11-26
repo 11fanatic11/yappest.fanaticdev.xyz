@@ -1,13 +1,10 @@
 {
-    "version":  "0.2.2",
+    "version":  "0.2.3",
     "published":  "2026-11-26",
     "notes":  [
-                  "Add folder: import every sound in a folder and its subfolders, with a preview count, progress and a Stop button",
-                  "Dropping folders onto the soundboard works too",
-                  "Sounds already imported from the same place are skipped on a re-import",
-                  "Unreadable audio files no longer leave dead tiles behind"
+                  "Fixed sounds staying highlighted after they finish playing, are stopped, or Stop all is used"
               ],
-    "url":  "https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/download/v0.2.2/Yappest-Setup.exe",
-    "sha256":  "8D194253E08ED9053F778ECDB4364B3165C9C434AD15B83FC715CFD2323B3810",
-    "size":  187319406
+    "url":  "https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/download/v0.2.3/Yappest-Setup.exe",
+    "sha256":  "9B5E8614CAA773CBC027126059D21CB27D91CD3E2194FA383CC771630E33B67C",
+    "size":  187320681
 }
