@@ -1,11 +1,13 @@
 {
-    "version":  "0.2.1",
+    "version":  "0.2.2",
     "published":  "2026-11-26",
     "notes":  [
-                  "Credits VB-CABLE (VB-Audio Software) in Settings",
-                  "Small layout tidy-ups"
+                  "Add folder: import every sound in a folder and its subfolders, with a preview count, progress and a Stop button",
+                  "Dropping folders onto the soundboard works too",
+                  "Sounds already imported from the same place are skipped on a re-import",
+                  "Unreadable audio files no longer leave dead tiles behind"
               ],
-    "url":  "https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/download/v0.2.1/Yappest-Setup.exe",
-    "sha256":  "E0DF59F5113DF381AE577A0E64970632B01BD967B6CDE24872D72E25257DEE77",
-    "size":  187316140
+    "url":  "https://github.com/11fanatic11/yappest.fanaticdev.xyz/releases/download/v0.2.2/Yappest-Setup.exe",
+    "sha256":  "8D194253E08ED9053F778ECDB4364B3165C9C434AD15B83FC715CFD2323B3810",
+    "size":  187319406
 }
